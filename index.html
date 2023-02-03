@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Document</title>
 </head>
 <body>
     <main>
         <h1>Contador de gatitos</h1>
-        <p id="welcome-el"></p>
+        <div class="michi-saludo">
+            <img src="img/pngkit_lucky-cat-png_4060594.png" alt="">
+            <div class="saludo">
+                <p id="welcome-el"></p>
+                <div class="colita-burbuja"></div>
+            </div>
+        </div>
 
         <div>
             <h2 id="count-el" class="contador">0</h2>
@@ -23,10 +29,10 @@
         </div>
         
         <div class="gatos-vistos">
-                <p id="save-el">Gatitos vistos: </p>
+                <p id="save-el"><span></span>Gatitos vistos: <br></p>
         </div>
     </main>
     
-    <script src="codigo.js"></script>
+    <script src="js/codigo.js"></script>
 </body>
 </html>

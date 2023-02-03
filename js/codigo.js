@@ -1,13 +1,14 @@
 let welcomeEl = document.getElementById("welcome-el");
 
-let name = "Lucía";
-let greeting = "¡Hola, " + name + "! Contá cuántos michis ves";
+let greeting = "¡Hola, michilover! Contá cuántos michis ves a lo largo de tu día";
 
 welcomeEl.innerText = greeting;
 
 welcomeEl.innerText += " 😸";
 
+let saveEl = document.getElementById("save-el");
 let countEl = document.getElementById("count-el");
+
 let count = 0;
 
 function increment() {
@@ -16,7 +17,7 @@ function increment() {
 }
 
 function save() {
-    let guardarCuenta = count += " -";
-    saveEl.innerText += guardarCuenta;
-    console.log(count);
+    saveEl.innerText += count + " - ";
+    count = 0;
+    countEl.innerText = 0;
 }

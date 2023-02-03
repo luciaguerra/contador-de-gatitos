@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #FFC5D1;
+    color: #994460;
+}
+
+body, button {
+    font-family: 'Poppins', sans-serif;
+}
+
+main, .gatos-vistos {
+    flex-direction: column;
+}
+
+main {
+    padding: 9.5vw;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+    line-height: 1;
+}
+
+main, button, .contador, .gatos-vistos, .michi-saludo {
+    justify-content: center;
+    align-items: center;
+}
+
+main, .contador, button, .gatos-vistos, .michi-saludo{
+    text-align: center;
+}
+
+.contador {
+    width: 10rem;
+    height: 10rem;
+    font-size: 4rem;
+    border-radius: 1rem;
+}
+
+.contador, button {
+    padding: 1rem;
+}
+
+main, div, button, .contador, .gatos-vistos, .michi-saludo {
+    display: flex;
+}
+
+p#welcome-el {
+    margin: 0.5rem;
+    text-align: left;
+    font-size: 1rem;
+}
+
+div {
+    flex-direction: row;
+}
+
+button {
+    border: none;
+    background-color: #994460;
+    color: white;
+    font-weight: 500;
+
+    margin: 1rem 0.2rem;
+    height: 2rem;
+    width: 6rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9e546c;
+}
+
+
+.gatos-vistos {
+    width: 10rem;
+    padding: 0.5rem;
+}
+
+.gatos-vistos, button, .saludo {
+    border-radius: 0.6rem;
+}
+
+.gatos-vistos, .contador {
+    background-color: #fbdbe1;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 7vw;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+}
+
+.michi-saludo {
+    width: 40%;
+    padding-bottom: 1rem;
+}
+
+.saludo {
+    background-color: #ffffff31;
+}
+
+@media only screen and (max-width: 768px) {
+    img {
+        width: 10vw;
+    }
+
+    .michi-saludo {
+        width: 70%;
+    }
+
+    p#welcome-el {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        width: 15vw;
+    }
+
+    .michi-saludo {
+        margin-top: 1rem;
+        width: 80%;
+    }
+}
