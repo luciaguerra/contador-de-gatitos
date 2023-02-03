@@ -20,7 +20,7 @@ main, .gatos-vistos {
 }
 
 main {
-    padding: 9.5vw;
+    padding: 6.3vw;
 }
 
 h1 {
@@ -34,7 +34,7 @@ main, button, .contador, .gatos-vistos, .michi-saludo {
     align-items: center;
 }
 
-main, .contador, button, .gatos-vistos, .michi-saludo{
+main, .contador, button, .gatos-vistos, .michi-saludo, .credito {
     text-align: center;
 }
 
@@ -112,7 +112,17 @@ img {
     background-color: #ffffff31;
 }
 
+.credito {
+    font-size: 0.7rem;
+    margin: 1rem;
+}
+
 @media only screen and (max-width: 768px) {
+    body {
+        height: 100vh;
+        padding: 1rem;
+    }
+
     img {
         width: 10vw;
     }
@@ -127,12 +137,17 @@ img {
 }
 
 @media only screen and (max-width: 600px) {
+    body {
+        height: 100vh;
+        padding: 2rem;
+    }
+
     img {
         width: 15vw;
     }
 
     .michi-saludo {
         margin-top: 1rem;
-        width: 80%;
+        width: 90%;
     }
 }
