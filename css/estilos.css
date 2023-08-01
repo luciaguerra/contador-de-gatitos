@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
+:root {
+    --background-color: #FFC5D1;
+    --font-color: #994460;
+    --neutral-color: #fbdbe1;
+    --neutral-background: #FFD0DA;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -7,37 +14,48 @@
 }
 
 body {
-    background-color: #FFC5D1;
-    color: #994460;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.3;
 }
 
 body, button {
     font-family: 'Poppins', sans-serif;
 }
 
-main, .gatos-vistos {
+main, article, .gatos-vistos {
     flex-direction: column;
 }
 
-main {
+body, main {
     width: 100%;
-    height: 100vh;
-    padding: 5rem 3rem;
+    min-height: 100vh;
 }
 
 h1 {
     font-size: 3rem;
-    margin-bottom: 0.75rem;
-    line-height: 1;
+    margin: 1rem 2rem;
 }
 
-main, button, .contador, .gatos-vistos, .michi-saludo {
+main, article, .contador, .gatos-vistos, .michi-saludo {
+    display: flex;
+}
+
+main, button, article, .contador, .gatos-vistos {
     justify-content: center;
     align-items: center;
 }
 
-main, .contador, button, .gatos-vistos, .michi-saludo, .credito {
-    text-align: center;
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 7vw;
+    margin: 0 1rem;
+    object-fit: contain;
 }
 
 .contador {
@@ -47,31 +65,24 @@ main, .contador, button, .gatos-vistos, .michi-saludo, .credito {
     border-radius: 1rem;
 }
 
-.contador, button {
-    padding: 1rem;
+article > div {
+    margin: 1.5rem 0;
 }
 
-main, div, button, .contador, .gatos-vistos, .michi-saludo {
-    display: flex;
+.botones {
+    margin: 0 0 1.2rem;
 }
 
 p#welcome-el {
     margin: 0.5rem;
     text-align: left;
-    font-size: 1rem;
-}
-
-div {
-    flex-direction: row;
 }
 
 button {
     border: none;
-    background-color: #994460;
+    background-color: var(--font-color);
     color: white;
     font-weight: 500;
-
-    margin: 1rem 0.2rem;
     height: 2rem;
     width: 6rem;
     cursor: pointer;
@@ -80,7 +91,6 @@ button {
 button:hover {
     background-color: #9e546c;
 }
-
 
 .gatos-vistos {
     width: 10rem;
@@ -92,26 +102,21 @@ button:hover {
 }
 
 .gatos-vistos, .contador {
-    background-color: #fbdbe1;
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    width: 7vw;
-    margin-bottom: 1rem;
-    margin-right: 2rem;
+    background-color: var(--neutral-color);
 }
 
 .michi-saludo {
-    width: 40%;
-    padding-bottom: 1rem;
+    width: 60%;
+    min-width: 70%;
+}
+
+.michi-saludo, .gatos-vistos {
+    margin: auto;
 }
 
 .saludo {
-    background-color: #ffffff31;
+    background-color: var(--neutral-background);
+    padding: 0.65rem;
 }
 
 .credito {
@@ -119,50 +124,33 @@ img {
     margin: 1rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 980px) {
     main {
         width: 100%;
-        padding: 3rem 2rem;
     }
 
     img {
-        width: 10vw;
+        width: 11vw;
     }
 
     .michi-saludo {
         width: 70%;
-    }
-
-    p#welcome-el {
-        font-size: 1.2rem;
+        min-width: 45%;
     }
 }
 
-@media only screen and (max-width: 600px) {
-    body, main {
-        height: 100vh;
-    }
-
-    main {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 3.3rem 1.5rem;
-    }
-
+@media only screen and (max-width: 528px) {
     h1 {
         font-size: 2.5rem;
     }
 
 
     img {
-        width: 17vw;
+        width: 15vw;
     }
 
     .michi-saludo {
-        margin-top: 1rem;
-        width: 90%;
+        width: 65%;
     }
 
     p#welcome-el {
@@ -170,32 +158,17 @@ img {
     }
 }
 
-@media only screen and (max-width: 321px) {
-    main {
-        width: 100%;
-        height: 100vh;
-        padding: 2rem 1.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    p#welcome-el {
-        font-size: 0.80rem;
-    }
-
+@media only screen and (max-width: 384px) {
     img {
         width: 20vw;
     }
 
+    p {
+        font-size: 0.7rem;
+    }
+
     .michi-saludo {
-        margin: 0;
-        padding-bottom: 0.6rem;
+        width: 80%;
     }
 
     .credito {

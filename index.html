@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,33 +10,30 @@
 </head>
 <body>
     <main>
-        <h1>Contador de gatitos</h1>
-        <div class="michi-saludo">
-            <img src="img/pngkit_lucky-cat-png_4060594.png" alt="">
-            <div class="saludo">
-                <p id="welcome-el"></p>
-                <div class="colita-burbuja"></div>
+        <section>
+            <h1>Contador de gatitos</h1>
+            <div class="michi-saludo">
+                <img src="img/pngkit_lucky-cat-png_4060594.png" alt="">
+                <div class="saludo">
+                    <p id="welcome-el"></p>
+                </div>
             </div>
-        </div>
+            <article>
+                <div>
+                    <h2 id="count-el" class="contador">0</h2>
+                </div>
+                <div class="botones">
+                    <button id="increment-btn">¡Michi!</button>
+                    <button id="save-btn">Anotar</button>
+                </div>
+            </article>
 
-        <div>
-            <h2 id="count-el" class="contador">0</h2>
-        </div>
-
-        <div>
-            <button id="increment-btn">¡Michi!</button>
-            <button id="save-btn">Anotar</button>
-            
-        </div>
-        
-        <div class="gatos-vistos">
-                <p id="save-el"><span></span>Gatitos vistos: <br></p>
-        </div>
-        <div><p class="credito">© Lucía Guerra Castro, 2023</p> </div>
+            <article class="gatos-vistos">
+                <p id="save-el">Gatitos vistos: <br></p>
+            </article>
+            <p class="credito">© Lucía Guerra Castro, 2023</p>
+        </section>
     </main>
-
-    
-    
     <script src="js/codigo.js"></script>
 </body>
 </html>
