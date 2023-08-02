@@ -119,6 +119,12 @@ button:hover {
     padding: 0.65rem;
 }
 
+#save-el {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0.65rem;
+}
+
 .credito {
     font-size: 0.7rem;
     margin: 1rem;
