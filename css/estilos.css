@@ -30,7 +30,7 @@ main, article, .gatos-vistos {
 }
 
 body, main {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -73,8 +73,8 @@ article > div {
     margin: 0 0 1.2rem;
 }
 
-p#welcome-el {
-    margin: 0.5rem;
+#welcome-el {
+    margin: 1.5rem;
     text-align: left;
 }
 
@@ -116,7 +116,6 @@ button:hover {
 
 .saludo {
     background-color: var(--neutral-background);
-    padding: 0.65rem;
 }
 
 #save-el {
@@ -130,7 +129,7 @@ button:hover {
     margin: 1rem;
 }
 
-/*@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 980px) {
     main {
         width: 100%;
     }
@@ -143,7 +142,7 @@ button:hover {
         width: 70%;
         min-width: 45%;
     }
-}*/
+}
 
 @media only screen and (max-width: 528px) {
     h1 {
